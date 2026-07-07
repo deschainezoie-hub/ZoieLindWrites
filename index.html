@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoie Lind | Writing Portfolio</title>
+  <meta name="description" content="Zoie Lind writing portfolio — girlhood, faith, longing, identity, and becoming." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a href="#home" class="brand" aria-label="Zoie Lind home"><span>Zoie</span> Lind</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#journal">Journal</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy fade-in">
+        <p class="eyebrow"><span class="spark">✦</span> Writing. Feeling. Becoming.</p>
+        <h1>Zoie <span>Lind</span></h1>
+        <p class="tagline">Writing about girlhood, faith, longing, identity, and becoming.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#portfolio">Read the Portfolio</a>
+          <a class="btn btn-outline" href="#about">About the Writer</a>
+        </div>
+      </div>
+      <div class="hero-art fade-in" aria-label="Open journal with lily and pen illustration">
+        <div class="book-scene">
+          <div class="candle"></div>
+          <div class="journal-book">
+            <div class="page left-page"><p>I am learning<br>to become the woman<br>I used to pray would<br>save me.</p></div>
+            <div class="page right-page"><p class="scribble">dear becoming,<br>let me tell the truth softly<br>and still mean it loudly.</p></div>
+          </div>
+          <div class="pen"></div>
+          <div class="lily">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="section-heading centered fade-in">
+        <p class="eyebrow line">Featured Pieces</p>
+        <h2 id="featured-title">Soft words. Sharp feelings.</h2>
+      </div>
+      <div class="feature-grid" id="featuredPieces"></div>
+    </section>
+
+    <section class="section latest" aria-labelledby="latest-title">
+      <div class="latest-layout">
+        <div class="latest-intro fade-in">
+          <p class="eyebrow">Latest Writing</p>
+          <h2 id="latest-title">Recent entries from the heart.</h2>
+          <a href="#journal" class="text-link">View all entries →</a>
+        </div>
+        <div class="latest-list" id="latestWriting"></div>
+      </div>
+    </section>
+
+    <section class="quote-band fade-in">
+      <div class="quote-inner">
+        <span>“</span>
+        <p>Writing is where I turn ache into art, silence into language, and becoming into proof.</p>
+        <small>— Zoie Lind</small>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <div class="portrait-card fade-in">
+          <div class="portrait-inner">Author Photo</div>
+        </div>
+        <div class="about-copy fade-in">
+          <p class="eyebrow">About the Writer</p>
+          <h2 id="about-title">A personal archive of faith, femininity, grief, desire, and growth.</h2>
+          <p>I write to make sense of the tender, dramatic, holy, and complicated pieces of becoming. My work explores girlhood, longing, relationships, faith, identity, healing, and the quiet moments that shape who we are.</p>
+          <p>This portfolio is a living room for my words: polished pieces, raw letters, journal-like essays, and creative fragments that tell the truth with beauty.</p>
+        </div>
+      </div>
+      <div class="values-grid">
+        <article class="info-card fade-in"><h3>Why I Write</h3><p>Because feelings deserve a body. Because memory deserves language. Because becoming is easier when it has a witness.</p></article>
+        <article class="info-card fade-in"><h3>Writing Philosophy</h3><p>Be honest, be beautiful, be brave. Let softness be powerful. Let faith and desire sit on the same page.</p></article>
+        <article class="info-card fade-in"><h3>Favorite Quotes</h3><p>“Tell the truth, but tell it slant.” — Emily Dickinson<br>“There is no greater agony than bearing an untold story inside you.” — Maya Angelou</p></article>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section-heading fade-in">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="portfolio-title">The archive</h2>
+        <p>Browse poetry, essays, letters, faith pieces, healing notes, relationship reflections, and creative writing.</p>
+      </div>
+      <div class="toolbar fade-in">
+        <input id="searchInput" type="search" placeholder="Search writing..." aria-label="Search portfolio">
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-btn active" data-category="All">All</button>
+          <button class="filter-btn" data-category="Poetry">Poetry</button>
+          <button class="filter-btn" data-category="Essays">Essays</button>
+          <button class="filter-btn" data-category="Letters">Letters</button>
+          <button class="filter-btn" data-category="Faith">Faith</button>
+          <button class="filter-btn" data-category="Healing">Healing</button>
+          <button class="filter-btn" data-category="Relationships">Relationships</button>
+          <button class="filter-btn" data-category="Creative Writing">Creative Writing</button>
+        </div>
+      </div>
+      <div class="masonry-grid" id="portfolioGrid"></div>
+    </section>
+
+    <section class="section post-section" id="post-template">
+      <article class="post fade-in">
+        <p class="eyebrow">Selected Piece</p>
+        <h2 id="postTitle">Remember Me</h2>
+        <div class="post-meta" id="postMeta"><span>July 7, 2026</span><span>Poetry</span><span>4 min read</span></div>
+        <p class="dropcap" id="postBody">This is where a full piece of writing would live. The typography is designed to feel like an editorial magazine: spacious, intimate, dramatic, and easy to read.</p>
+        <p>Replace this sample text with your poem, essay, letter, or journal entry. You can duplicate this section into separate HTML pages later, or connect it to a blog/CMS when you are ready.</p>
+        <div class="share-row"><button id="copyLink">Copy Link</button><button>Save</button><button>Share</button></div>
+      </article>
+    </section>
+
+    <section class="section journal" id="journal" aria-labelledby="journal-title">
+      <div class="section-heading centered fade-in">
+        <p class="eyebrow line">Journal</p>
+        <h2 id="journal-title">Process, books, prayer, and behind the scenes.</h2>
+      </div>
+      <div class="journal-grid" id="blogGrid"></div>
+    </section>
+
+    <section class="newsletter section" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter-copy fade-in">
+        <p class="eyebrow">Newsletter</p>
+        <h2 id="newsletter-title">Letters for the girls becoming themselves.</h2>
+      </div>
+      <form class="newsletter-form fade-in">
+        <input type="email" placeholder="your@email.com" aria-label="Email address" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+        <small>Encouragement, new writing, and soft reminders — straight to your inbox.</small>
+      </form>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-grid">
+        <div class="fade-in">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s make something beautiful with words.</h2>
+          <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noreferrer">@yourinstagram</a></p>
+          <div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Pinterest">♢</a><a href="mailto:hello@example.com" aria-label="Email">✉</a></div>
+        </div>
+        <form class="contact-form fade-in">
+          <label>Name<input type="text" placeholder="Your name" required></label>
+          <label>Email<input type="email" placeholder="Your email" required></label>
+          <label>Message<textarea placeholder="Tell me what you need..." rows="6" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <footer class="footer">
+    <div><a class="brand" href="#home"><span>Zoie</span> Lind</a><p>Writing the tender, the loud, and the becoming.</p></div>
+    <nav><a href="#home">Home</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#journal">Journal</a><a href="#contact">Contact</a></nav>
+    <p>© 2026 Zoie Lind. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
